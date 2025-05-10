@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>NailDesignServlet</servlet-name>
+        <servlet-class>za.ac.tut.web.NailDesignServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ViewBookingServlet</servlet-name>
+        <servlet-class>za.ac.tut.web.ViewBookingServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoadBookingForEditServlet</servlet-name>
+        <servlet-class>za.ac.tut.web.LoadBookingForEditServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditBookingServlet</servlet-name>
+        <servlet-class>za.ac.tut.web.EditBookingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NailDesignServlet</servlet-name>
+        <url-pattern>/NailDesignServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewBookingServlet</servlet-name>
+        <url-pattern>/ViewBookingServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoadBookingForEditServlet</servlet-name>
+        <url-pattern>/LoadBookingForEditServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditBookingServlet</servlet-name>
+        <url-pattern>/EditBookingServlet.do</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
